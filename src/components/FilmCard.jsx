@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const FilmCard = (props) => {
     return (
@@ -17,8 +18,13 @@ const FilmCard = (props) => {
                             </ul>
                             <hr/>
                             <h6>Plot:</h6>
-                            <p>{film.description}</p>
+                            <p>{film.description}</p>                                                      
                         </div>
+                        <footer className="d-flex justify-content-center">
+                            <Link to={`/films/${film.id}`} className='btn btn-primary mb-4'>
+                                See Details
+                            </Link>
+                        </footer>
                     </div>
                 </div>
             ))}
