@@ -21,9 +21,6 @@ const App = () => {
                 <Route exact path='/films/:filmid'>
                     <FilmDetails />
                 </Route>
-                <Route exact path='/peopleid'>
-                    
-                </Route>
             </Switch>
         </BrowserRouter>
     );
